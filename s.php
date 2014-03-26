@@ -17,7 +17,10 @@
       CREATE TABLE PROFILE
       (ID INT PRIMARY KEY     NOT NULL,
       PHONE           TEXT    NOT NULL,
-      PASS            TEXT     NOT NULL);
+      NAME            TEXT     NOT NULL,
+      PASSWORD    TEXT     NOT NULL,
+      BLOODGROUP     TEXT     NOT NULL,
+      CITY        TEXT     NOT NULL);
 EOF;
 
    $ret = $db->exec($sql);
